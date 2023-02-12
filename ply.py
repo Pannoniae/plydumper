@@ -11,6 +11,10 @@ class PLY:
     def __init__(self, path, translate_uv_y=False):
         self.path = path
         self.translate_uv_y = translate_uv_y
+        if self.translate_uv_y:
+            print("Translating UVs")
+        else:
+            print("Not translating UVs")
         self.indeces = []
         self.positions = []
         self.normals = []
